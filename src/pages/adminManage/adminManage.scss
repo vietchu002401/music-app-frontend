@@ -1,0 +1,151 @@
+
+
+.admin-page{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../../assets/backgroundImage/bg_pc.jpg");
+    background-repeat: repeat;
+    padding-bottom: 100px;
+
+    .admin-page__header{
+        width: 100%;
+        height: 100px;
+        border: 1px solid black;
+        padding: 10px;
+
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            width: 50%;
+            height: 100%;
+
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.selected{
+    background-color: lightgrey;
+}
+
+
+.admin-page__table{
+    max-width: 1600px;
+    border: 1px solid black;
+    margin: 50px auto;
+
+    th, td{
+        border: 1px solid black;
+        padding: 3px;
+    }
+    td{
+        font-family: 'Times New Roman', Times, serif;
+        img{
+            width: 200px;
+            height: 150px;
+        }
+    }
+
+    p{
+        margin: 0 20px;
+        cursor: pointer;
+        padding: 3px;
+    }
+}
+
+.admin-page__add-song{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-trend{
+    width: 600px;
+    height: 600px;
+    padding-top: 30px;
+    margin: 100px auto;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+    h3:nth-child(1){
+        position: absolute;
+        top: -50px;
+        left: -100px;
+    }
+    h3:nth-child(2){
+        position: absolute;
+        bottom: -50px;
+        right: -100px;
+    }
+
+    .percent-chart{
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        top: 0;
+        left: -10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        li{
+            display: flex;
+            align-items: flex-end;
+            border-bottom: 2px solid black;
+            padding-bottom: 3px;
+            justify-content: center;
+        }
+    }
+
+    .kind-chart{
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        bottom: -10%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+
+        li{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .all-trend__toast{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+        top: 0;
+        left: 0;
+    }
+}
+
+.chart{
+    width: 50px;
+    background-color: purple;
+}
+
+.admin-main-content{
+    position: relative;
+    min-height: 300px;
+    padding-bottom: 100px;
+}

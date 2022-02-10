@@ -1,0 +1,106 @@
+.home{
+    overflow: hidden;
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+    margin-top: -100px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.main-home{
+    max-width: 1500px;
+    height: auto;
+    margin: 0px auto 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.main-home::after{
+    content: "";
+    background: linear-gradient(to bottom, rgb(0 0 0 / 62%) 0%, rgb(0 37 50 / 49%) 100%);
+    top: 0;
+    left: -50%;
+    height: 100%;
+    width: 200%;
+    position: absolute;
+    z-index: -4;
+}
+
+.video-background{
+    width: 100%;
+    height: 1000px;
+    margin: 200px 0 300px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+    video{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: auto;
+        z-index: 0;
+    }
+
+    .video-background__news{
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        z-index: 0;
+        background: linear-gradient(to bottom, rgb(0 0 0 / 62%) 0%, rgb(0 37 50 / 49%) 100%);
+        div{
+            padding: 20px;
+            width: 100%;
+        }
+        h1{
+            color: white;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+    }
+    .video-background__link{
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width : 1500px) {
+    .video-background {
+        margin: 100px auto 200px;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .video-background {
+        margin: 100px auto 200px;
+        height: 1200px;
+        flex-direction: column;
+
+        video{
+            left: -50%;
+        }
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .video-background {
+        height: 1000px;
+    }
+}

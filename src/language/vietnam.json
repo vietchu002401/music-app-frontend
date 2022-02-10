@@ -1,0 +1,43 @@
+{
+    "loading" : "Đang tải",
+    "header" : {
+        "title" : "Bộ sưu tập âm nhạc của tôi.",
+        "title2" : "Tuyển tập những bài hát và nhạc nền tuyệt vời nhất tôi từng nghe.",
+        "title3" : "Mong rằng bạn sẽ yêu thích chúng."
+    },
+    "mostView" : "Xem nhiều nhất",
+    "newest" : "Mới nhất",
+    "loadMore" : "Tải thêm",
+    "mostQuality" : "Chất lượng nhất",
+    "mostLoved" : "Yêu thích nhất",
+    "watchNow" : "Xem ngay",
+    "information" : "Thông tin",
+    "seeMore" : "Xem thêm",
+    "songName" : "Tên bài hát:",
+    "movie" : "Anime/Movie:",
+    "introduce" : {
+        "title" : "Giới thiệu",
+        "content1" : "Website cá nhân được tạo ra với mục đích chia sẻ những bài hát và nội dung hay đến với mọi người.",
+        "content2" : "Hoàn toàn phi lợi nhuận, tất cả nội dung trên website đều lấy nguồn từ Youtube."
+    },
+    "taskbar" : {
+        "search" : "Tìm kiếm",
+        "disable" : "Tắt font chữ Harry Potter",
+        "enable" : "Bật font chữ Harry Potter",
+        "recommend" : "Đề xuất một số bài hát",
+        "listMp3" : "Tuyển tập Mp3",
+        "favorite" : "Bài hát đã thích"
+    },
+    "composer" : "Nhà soạn nhạc:",
+    "singer" : "Ca sỹ:",
+    "lyric" : "Lời bài hát",
+    "goToYoutube" : "Đi đến Youtube",
+    "description" : "Mô tả từ kênh Youtube của tác giả.",
+    "related" : "Bài hát liên quan",
+    "comment" : "Bình luận",
+    "youMustLogin" : "Bạn cần phải đăng nhập để bình luận..!",
+    "noResult" : "Không có kết quả",
+    "reply" : "Trả lời",
+    "edit" : "Chỉnh sửa",
+    "changeLanguage" : "Đổi ngôn ngữ"
+}

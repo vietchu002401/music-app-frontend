@@ -1,0 +1,80 @@
+@import url("../../assets/animation/animation.css");
+.header{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-bottom: 10px;
+    transition: 1s;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 15% 15%;
+    background-image: url("../../assets/backgroundImage/bg_pc.jpg");
+    overflow: hidden;
+    box-shadow: black 0px 54px 55px, black 0px -12px 30px, black 0px 4px 6px, black 0px 12px 13px, black 0px -3px 5px;
+    position: relative;
+    z-index: 1000;
+
+    .header__preview{
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 0 15%;
+
+        h1{
+            margin: 0;
+            padding: 10px;
+            font-size: 40px;
+            transition: 0.5s;
+            text-align: center;
+        }
+        h2{
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            transition: 1s;
+        }
+    }
+
+    .header__img{
+        flex: 1;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 0 0 15% 0%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+            animation: headerImage 5s linear forwards;
+        }
+    }
+}
+
+@media only screen and (max-width : 750px) {
+    .header{
+        flex-direction: column-reverse;
+        height: 500px;
+
+        .header__img{
+            border-radius: 0 0 15% 15%;
+        }
+
+        .header__preview{
+            flex-basis: 20%;
+    
+            h1{
+                padding: 5px;
+                font-size: 30px;
+            }
+            h2{
+                font-size: 25px;
+                padding: 5px;
+            }
+        }
+    }
+}

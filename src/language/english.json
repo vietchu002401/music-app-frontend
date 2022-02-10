@@ -1,0 +1,43 @@
+{
+    "loading" : "Loading",
+    "header" : {
+        "title" : "My Music Collection",
+        "title2" : "The best Music and Soundtrack compilation I've ever heard.",
+        "title3" : "Hope you enjoy it."
+    },
+    "mostView" : "Most View",
+    "newest" : "Newest",
+    "loadMore" : "Load more",
+    "mostQuality" : "Most Quality",
+    "mostLoved" : "Most Loved",
+    "watchNow" : "Watch now",
+    "information" : "Information",
+    "seeMore" : "See more",
+    "songName" : "Song name:",
+    "movie" : "Anime/Movie:",
+    "introduce" : {
+        "title" : "Introduce",
+        "content1" : "Personal website created with the purpose of sharing good songs and content to everyone.",
+        "content2" : "Completely non-profit, all content on the website is sourced from Youtube."
+    },
+    "taskbar" : {
+        "search" : "Search",
+        "disable" : "Disable Harry Potter font",
+        "enable" : "Enable Harry Potter font",
+        "recommend" : "Recommend some song",
+        "listMp3" : "List Mp3",
+        "favorite" : "Favorites list"
+    },
+    "composer" : "Composer",
+    "singer" : "Singer",
+    "lyric" : "Lyrics",
+    "goToYoutube" : "Go to Youtube",
+    "description" : "Description from the author's youtube channel.",
+    "related" : "Related Songs",
+    "comment" : "Comment",
+    "youMustLogin" : "You must login to write the comment..!",
+    "noResult" : "No Result",
+    "reply" : "Reply",
+    "edit" : "Edit",
+    "changeLanguage" : "Change language"
+}

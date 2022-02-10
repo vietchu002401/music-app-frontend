@@ -1,0 +1,210 @@
+.comment-frame{
+    max-width: 1200px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 30px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding-top: 50px;
+    position: relative;
+
+    h2{
+        margin-bottom: 20px;
+    }
+    
+    .comment-main{
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+
+        .comment{
+            width: 100%;
+            min-height: 60px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+
+
+
+            .comment__content{
+                min-height: 50px;
+                max-width: calc(100% - 110px);
+                min-width: 220px;
+                position: relative;
+                div{
+                    display: flex;
+                    align-items: flex-end;
+                    padding: 10px;
+                    background-color: #f0f2f5;
+                    border-radius: 30px;
+                    min-height: 120px;
+                    padding-bottom: 50px;
+                    position: relative;
+                    font-size: 19px;
+                    text-align: justify;
+                    text-indent: 20px;
+                    line-height: 1.5;
+                    padding-right: 20px;
+                    padding-top: 50px;
+                    .like-comment-icon{
+                        position: absolute;
+                        bottom: 15px;
+                        left: 15px;
+                        cursor: pointer;
+                        z-index: 5;
+                    }
+                    .comment-time{
+                        position: absolute;
+                        right: 15px;
+                        bottom: 15px;
+                        -webkit-touch-callout: none; /* iOS Safari */
+                        -webkit-user-select: none; /* Safari */
+                         -khtml-user-select: none; /* Konqueror HTML */
+                           -moz-user-select: none; /* Old versions of Firefox */
+                            -ms-user-select: none; /* Internet Explorer/Edge */
+                                user-select: none;
+                    }
+                    .user-comment{
+                        position: absolute;
+                        font-weight: bold;
+                        top: 0;
+                        left: 0;
+                        padding: 10px;
+                    }
+                    small{
+                        position: absolute;
+                        bottom: 5px;
+                        left: 25px;
+                        -webkit-touch-callout: none; /* iOS Safari */
+                        -webkit-user-select: none; /* Safari */
+                         -khtml-user-select: none; /* Konqueror HTML */
+                           -moz-user-select: none; /* Old versions of Firefox */
+                            -ms-user-select: none; /* Internet Explorer/Edge */
+                                user-select: none;
+                    }
+                }
+
+                .comment-reply-btn{
+                    right: 20px;
+                    top: calc(100% + 5px);
+                    position: absolute;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                }
+            }
+            .comment-icon{
+                position: relative;
+                margin: auto 0;
+
+                .comment-menu-icon{
+                    margin: auto 0;
+                    cursor: pointer;
+                    position: relative;
+                }
+                .comment-menu-icon:hover{
+                    color: grey;
+                }
+                .comment__edit{
+                    width: 300px;
+                    height: 80px;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    background-color: white;
+                    border-radius: 20px;
+                    border: 1px solid black;
+                    overflow: hidden;
+                    z-index: 10;
+                    .edit-delete{
+                        flex: 1;
+                        align-items: center;
+                        display: flex;
+                        padding-left: 10px;
+                        padding-right: 20px;
+                        cursor: pointer;
+                        -webkit-touch-callout: none; /* iOS Safari */
+                        -webkit-user-select: none; /* Safari */
+                         -khtml-user-select: none; /* Konqueror HTML */
+                           -moz-user-select: none; /* Old versions of Firefox */
+                            -ms-user-select: none; /* Internet Explorer/Edge */
+                                user-select: none;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    div:hover{
+                        background-color: lightgrey;
+                    }
+                }
+                .comment-menu-icon:focus +.comment__edit{
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    @media only screen and(max-width: 390px) {
+        .comment-main{
+            padding: 40px 0;
+        }
+    }
+}
+
+.comment__img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin: 0 10px;
+    z-index: 1;
+}
+
+.your-comment{
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    padding-top: 0;
+    display: flex;
+    height: auto;
+    .your-comment-main{
+        flex: 1;
+        height: 50px;
+        display: flex;
+
+        .input-comment{
+            width: 100%;
+            display: block;
+            padding: 10px;
+            border-radius: 30px;
+            background-color: lightgrey;
+            outline: none;
+        }
+    }
+}
+
+.loader-comment{
+    border: 5px solid grey; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 2s linear infinite;
+}
+
+.reply-comment-line{
+    position: absolute;
+    width: 50px;
+    min-height: 120px;
+    right: calc(100% - 15px);
+    bottom: calc(100% - 30px);
+    border-radius: 0 20px;
+    border-bottom: 2px solid grey;
+    border-left: 2px solid grey;
+    z-index: 0;
+}

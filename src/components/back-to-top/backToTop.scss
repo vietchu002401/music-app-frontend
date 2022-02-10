@@ -1,0 +1,19 @@
+.back-to-top{
+
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-image: linear-gradient(#d099313b 100%,transparent),url("../../assets/backgroundImage/btn_page_top_pc.png");
+    background-position: center top;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px grey;
+}
+
+.back-to-top:hover{
+    background-image: linear-gradient(transparent 100%,transparent),url("../../assets/backgroundImage/btn_page_top_pc.png");
+}
+
