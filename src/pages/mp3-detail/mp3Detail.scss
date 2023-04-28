@@ -1,0 +1,98 @@
+.mp3-detail-page{
+    overflow: hidden;
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    padding-bottom: 10px;
+    position: relative;
+
+    .mp3-list{
+        flex-basis: 40%;
+        padding: 30px;
+        padding-bottom: 150px;
+    }
+
+    .mp3-main-pic{
+        flex: 1;
+        overflow: hidden;
+        height: 1400px;
+        img{
+            width: 100%;
+            height: 100%;
+            animation: image-mp3-fadeIn 5s ease-out forwards;
+        }
+    }
+}
+.mp3-go-to{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: antiquewhite;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mp3-field{
+    width: 100%;
+    margin: 10px 0 10px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    p{
+        margin-left: 50px;
+    }
+}
+.mp3-field:hover{
+    background-color: #ee688e;
+}
+
+.my-mp3-player{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    animation: mp3-player-fadeIn 0.5s linear forwards;
+}
+
+.rhap_container {
+    background-color: #310f37 !important;
+  }
+  
+  .rhap_button-clear{
+    color: white !important;
+  }
+  
+  .rhap_time{
+    color: white !important;
+  }
+  
+  .rhap_progress-indicator{
+    background: #dc4f77 !important;
+  }
+  
+  .rhap_progress-filled{
+    background-color: #dc4f77 !important;
+  }
+  
+  .rhap_volume-indicator{
+    background: white !important;
+  }
+  .rhap_additional-controls{
+    justify-content: center !important;
+  }
+  .rhap_volume-controls{
+    justify-content: center !important;
+  }
+
+  @media only screen and(max-width : 1000px) {
+      .mp3-detail-page{
+          flex-direction: column-reverse;
+      }
+  }

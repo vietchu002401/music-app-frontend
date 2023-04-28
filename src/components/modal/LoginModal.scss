@@ -1,0 +1,155 @@
+@import url(../../assets/animation/animation.css);
+
+.Modal{
+    position: relative;
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    margin-top: 100px;
+    top: 300px;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    background-color: rgb(235, 233, 233);
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+
+.Modal-mp3{
+    position: relative;
+    width: 1500px;
+    max-height: 100vh;
+    padding: 20px;
+    margin-top: 100px;
+    top: 300px;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    overflow-y: scroll;
+    background-color: rgb(235, 233, 233);
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+
+.Overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.fadeIn{
+    animation: animateModal-fadeIn 0.5s forwards;
+}
+
+.fadeOut{
+    animation: animateModal-fadeOut 0.5s forwards;
+}
+
+.modal__title{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+.modal__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    div{
+        padding: 5px;
+
+        input{
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+        }
+    }
+    button{
+        width: 30%;
+        height: 30px;
+        margin: 10px auto;
+    }
+}
+
+.video-modal{
+    width: 100%;   
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.song-information{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+
+    .song-information__field{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    p{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .button-update-icon{
+        margin: 0 30px;
+    }
+
+    .button-update-icon:hover{
+        color: grey;
+        cursor: pointer;
+    }
+}
+.selection{
+    width: 100%;
+}
+
+@media only screen and (max-width : 800px) {
+    .Modal{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    .Modal{
+        width: 320px;
+    }
+}
+
+.song-delete{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.mp3-modal__table{
+    width: 100%;
+    border: 1px solid black;
+    th, td{
+        border: 1px solid black;
+        min-width: 300px;
+    }
+}

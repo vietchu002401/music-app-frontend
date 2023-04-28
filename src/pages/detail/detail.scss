@@ -1,0 +1,138 @@
+
+.detail{
+    overflow: hidden;
+    width: 100%;
+    min-height: 400px;
+    margin-top: -100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+
+    .route{
+        padding: 3px;
+        margin: 0 30px 0;
+        display: flex;
+
+        .home-icon{
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .home-icon:hover{
+            color: blue;
+        }
+    }
+    h1{
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+
+.detail__main{
+    max-width: 1500px;
+    display: flex;
+    height: auto;
+    margin: 0px auto;
+
+    .lyric{
+        padding: 20px;
+        flex-basis: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+            margin: 20px auto;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+
+    .detail__main__song-info{
+        flex: 1;
+        padding: 30px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            margin: 0 auto;
+        }
+        
+        p{
+           justify-content: flex-start;
+        }
+    }
+}
+
+.detail__video{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.detail__recommend{
+    max-width: 1500px;
+    display: flex;
+    height: auto;
+    margin: 100px auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1400px) {
+    .detail__video{
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .detail__video{
+        width: 80%;
+        height: 500px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .detail__video{
+        height: 500px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .detail__video{
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .detail__video{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .detail__main{
+        flex-direction: column-reverse;
+    }
+}
+
+.detail__main__like{
+    display: flex;
+    margin: 20px 0px;
+    position: relative;
+    height: 50px;
+    justify-content: space-between;
+    p{
+        margin-right: 80px;
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

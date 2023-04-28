@@ -1,0 +1,75 @@
+.mp3-page{
+    overflow: hidden;
+    width: 100%;
+    min-height: 400px;
+    margin-top: -100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+
+    .news-page__route{
+        padding: 3px;
+        margin: 0 30px 0;
+        display: flex;
+
+        .home-icon{
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .home-icon:hover{
+            color: blue;
+        }
+    }
+}
+
+.mp3-page__main{
+    max-width: 1500px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.mp3-load{
+    overflow: hidden;
+    background-repeat: repeat;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9999999999;
+    background-image: url("../../assets/backgroundImage/bg_loading.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        animation: page-loading-loading 4s linear infinite;
+    }
+}
+
+.mp3-loading{
+    overflow: hidden;
+    background-repeat: repeat;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9999999999;
+    background-image: url("../../assets/backgroundImage/bg_pc.jpg");
+    animation: page-mp3-fadeOut 1.5s 1.5s linear forwards;
+}
+.mp3-loading::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: repeat;  
+    background-image: url("../../assets/backgroundImage/bg_loading.png");
+    animation: page-mp3-loader 0.5s 0.5s linear forwards;
+}
